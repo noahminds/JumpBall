@@ -1,0 +1,6 @@
+Flag Sprite:
+    - https://www.flaticon.com/free-icons/end
+    - End icons created by Freepik - Flaticon
+Grass Sprite:
+    - https://www.flaticon.com/free-icons/grass
+    - Grass icons created by Freepik - Flaticon
