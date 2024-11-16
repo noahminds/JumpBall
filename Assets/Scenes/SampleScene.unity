@@ -271,7 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b118b36bd496a4057a9dc1f1dc7cff80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1492693058}
 --- !u!1001 &693201855
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -280,6 +280,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6976940138857809401, guid: 9ab505b8df91e4638837c42ff0d27c9b, type: 3}
+      propertyPath: rollSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -6976940138857809401, guid: 9ab505b8df91e4638837c42ff0d27c9b, type: 3}
+      propertyPath: jumpHeight
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2685788546329675572, guid: 9ab505b8df91e4638837c42ff0d27c9b, type: 3}
+      propertyPath: m_GravityScale
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2750052518603369316, guid: 9ab505b8df91e4638837c42ff0d27c9b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -381,11 +393,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: LongGround
       objectReference: {fileID: 0}
+    - target: {fileID: 7070632051599410645, guid: 0bb1ab6db0bbd4f6c8d93e098bdba266, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bb1ab6db0bbd4f6c8d93e098bdba266, type: 3}
+--- !u!4 &1492693058 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2750052518603369316, guid: 9ab505b8df91e4638837c42ff0d27c9b, type: 3}
+  m_PrefabInstance: {fileID: 693201855}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
