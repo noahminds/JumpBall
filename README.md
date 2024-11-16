@@ -18,6 +18,10 @@
 
 ## DevLog
 #### Entry 1 - Nov 16, 2024
-- Created the red ball prefab using the Unity editor.
-- Created ground prefabs of three different sizes so I can build the level using the Unity editor. Included a grass sprite to add aesthetic appeal.
-- Implemented collisions between the ball and the ground using an EdgeCollider2D component.
+- **Morning**:
+    - Created the red ball prefab using the Unity editor.
+    - Created ground prefabs of three different sizes so I can build the level using the Unity editor. Included a grass sprite to add aesthetic appeal.
+    - Implemented collisions between the ball and the ground using an EdgeCollider2D component.
+- **Afternoon**:
+    - Implemented the camera follow script to follow the ball.
+    - Implemented the ball movement script including jumping and rolling left and right.
