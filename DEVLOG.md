@@ -1,5 +1,5 @@
 # JumpBall DevLog
-#### Preliminary Game Design
+## Preliminary Game Design
 - **Game Concept**: A 2D platformer where the player controls a red ball that can jump to reach the goal.
 - **Game Mechanics**:
     - The player can move the ball left and right.
