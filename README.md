@@ -1,5 +1,6 @@
 # JumpBall
 ## Preliminary Game Design
+- **Inspiration**: This game was inspired by a childhood game called Red Ball. The game was a simple 2D platformer where the player controlled a red ball that could navigate obstacles across 10 levels to reach the goal.
 - **Game Concept**: A 2D platformer where the player controls a red ball that can jump to reach the goal.
 - **Game Mechanics**:
     - The player can move the ball left and right.
