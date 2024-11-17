@@ -1,5 +1,11 @@
 # JumpBall
 
+## How to Open and Run the Game
+1. Ensure you have Unity Editor version 2022.3.47f1 installed on your computer.
+2. Open the Unity Hub and click on the "Open" button.
+3. Navigate to the directory where the JumpBall project is located and select the project folder.
+4. Once the project and scene are loaded in the Unity Editor, click on the "Play" button at the top of the screen to run the game.
+
 ## How to Play
 ### Goals & Objectives
 The objective of the game is to navigate the red ball through the level to reach the flag post, avoiding obstacles such as spikes and falling off the level.
