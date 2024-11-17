@@ -12,6 +12,7 @@ public class Controller : MonoBehaviour
     private bool jump = false; // Flag for jump input
     private bool isGrounded = false; // Checks if the ball is grounded
     private GameManager gameManager;
+    private int groundContactCount = 0; // Number of ground objects in contact with the ball
 
     private void Start()
     {
@@ -36,6 +37,7 @@ public class Controller : MonoBehaviour
     {
         if (collision.collider.CompareTag("Ground"))
         {
+            groundContactCount++;
             isGrounded = true;
         }
     }
@@ -44,7 +46,13 @@ public class Controller : MonoBehaviour
     {
         if (collision.collider.CompareTag("Ground"))
         {
-            isGrounded = false;
+            groundContactCount--;
+
+            // If no more ground objects are in contact, the ball is no longer grounded
+            if (groundContactCount <= 0)
+            {
+                isGrounded = false;
+            }
         }
     }
 

@@ -14,7 +14,7 @@
     - Spikes can result in a game over condition where the big red ball breaks into a couple of small red balls, and the game over screen flashes up.
 #### Aesthetic Goals
 - **Simplicity**: The game should have a simple and clean design. The red ball has a black line to help indicate the direction of movement. The ground will have a simple grass sprite in places to add aesthetic appeal.
-- **Success Indicators**: Players progress the ball towards the clearly marked flag post. When they reach the objective a sucess screen flashes up with the option to play again.
+- **Success Indicators**: Players progress the ball towards the clearly marked flag post. When they reach the objective a sucess screen flashes up indicating they completed the level and prompting them to play again.
 
 ## DevLog
 #### Entry 1 - Nov 16, 2024
@@ -35,5 +35,6 @@
     - Added a success screen that flashes up when the ball reaches the flag post and prompts the player to restart the game.
     - Implemented the GameManager script to allow the player to complete the level upon reaching the flag (the objective) and restart the game by pressing the R key.
     - The game now resets when the player falls off the level.
+    - Added a moveable crate object that the ball can push around to help overcome certain obstacles.
 
     

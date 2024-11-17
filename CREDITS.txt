@@ -6,3 +6,6 @@ Grass Sprite:
     - Grass icons created by Freepik - Flaticon
 Spike Sprite:
     - https://kairosolo.itch.io/
+Crate Sprite:
+    - https://www.flaticon.com/free-icons/crate
+    - Crate icons created by srip - Flaticon
