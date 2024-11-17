@@ -79,6 +79,10 @@ public class Controller : MonoBehaviour
     {
         if (collision.CompareTag("Spikes"))
         {
+            // Disable gravity to prevent the ball from bouncing off the spikes
+            rb.gravityScale = 0;
+            rb.velocity = Vector2.zero; // Stop the ball's movement
+            
             gameManager.ResetOnFail(); // Restart the level after a delay
         }
         else if (collision.CompareTag("Objective"))
