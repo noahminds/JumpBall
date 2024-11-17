@@ -27,5 +27,13 @@
 - **Afternoon**:
     - Added a vertically moving platform object.
         - Experienced difficulties with interactions between the ball and the moving platform. When the moving platform moved downwards, the ball would lag behind. This issue was resolved by changing the way that the platform's position was updated - using it's rigidbody2D component instead of transform.
+    - Added a horizontally moving platform object - changing the movement script to move the platform between specified positions (transforms).
+    - Added a spike object that results in the game resetting when the ball collides with it.
+        - I made the decision to reset the game when the ball collides with the spike object rather than breaking the ball into smaller balls. This was a design decision to keep the game simple.
+- **Evening**:
+    - Added a flag post object that the ball can reach to complete the level.
+    - Added a success screen that flashes up when the ball reaches the flag post and prompts the player to restart the game.
+    - Implemented the GameManager script to allow the player to complete the level upon reaching the flag (the objective) and restart the game by pressing the R key.
+    - Also allow the user to reset the level at any time by pressing the ESC key.
 
     
