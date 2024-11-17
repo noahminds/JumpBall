@@ -10,14 +10,16 @@ The goal of the game is to navigate the red ball through the level to reach the 
 ### Progress Indicators
 - The camera follows the ball, keeping it centered on the screen, allowing you to see your progress through the level.
 - Navigating moving platforms and obstacles such as spikes will indicate that you are progressing through the level. Players need to navigate these obstacles to reach the flag post at the end.
-- Reaching the flag post at the end of the level is the final objective.
+- Hitting spikes or falling off the level will result in a game over condition, resetting the game. A sound effect will play to indicate failure.
+- Reaching the flag post at the end of the level is the final objective and will play a success sound effect that indicates you have completed the level.
 
 ### Achieving the Goal
 - When you reach the flag post, a success screen will flash up, indicating that you have completed the level and prompting you to play again by pressing the 'R' key.
 
 ### Avoiding Stuck States
-- The game will reset if you fall off the level or collide with any spikes, ensuring you do not get stuck.
+- The game will reset if you fall off the level or collide with any spikes, ensuring you do not get stuck. The game will freeze briefly before resetting and plays a sound effect to indicate failure.
 - Once the objective is reached, the player can restart the level by pressing the 'R' key.
 
 ### Tips
-- Make sure to set the scale of the game in the Unity editor to the minimum for the best viewing experience.
+- Set the screen size to Full HD (1920x1080) for the best viewing experience.
+- Set the scale of the Game in the Unity Editor to the minimum for the best viewing experience.

@@ -39,4 +39,33 @@
     - Implemented the GameManager script to allow the player to complete the level upon reaching the flag (the objective) and restart the game by pressing the R key.
     - The game now resets when the player falls off the level.
     - Added a moveable crate object that the ball can push around to help overcome certain obstacles.
-    - Added sound effects to indicate failure (colliding with spikes) and success (reaching the flag post).
+    - Added sound effects to indicate failure (colliding with spikes or falling) and success (reaching the flag post). Initially I did not consider sound effects in the preliminary design, but they definitely add to the game experience by providing feedback to the player upon mistakes or eventual completion of the level.
+
+## Postmortem
+
+### Summary of Initial Goals
+Originally, I set out to create a simple 2D platformer inspired by a childhood Flash game that I loved called Red Ball.
+
+### Final Goals
+By the end, my goals evolved to include more obstacles and more complex mechanics than I originally envisioned. For example, my moving platforms did not just move up and down, but I actually was able to create them to move between specified positions, making them more dynamic. I also added a crate object that the player could push around to help overcome obstacles.
+
+### Accomplishments
+I successfully implemented the core mechanic of the game, added moving platforms, obstacles, a flag post, and sound effects. The game includes a complete and challenging level with a success screen and restart functionality once the player reaches the end. I'm proud of the experience my final game offers.
+
+### What Went Right
+- The core mechanics of jumping worked well from the beginning.
+- I was quickly able to create the elements of my scene using the Unity editor directly as well as a few simple free sprites that I downloaded (see CREDITS.txt).
+- The camera follow script was easy to implement and added to the aesthetics of the game.
+- Implementing moving platforms was relatively straight forward however I did encounter bugs with the mechanics of the red ball which I explain below.
+
+### What Went Wrong
+- I had significant bugs in the player's movement resulting from the platform interactions:
+    - In part this was due to the scales of the objects being different meaning that the red ball would warp when its transfrom was assigned as a child of the moving platform. Resolving this issue required rescaling the sprites. 
+    - I seperately observed that the ball was lagging behind the platform when it moved downwards. This was resolved by changing the way that the platform's position was updated - using it's rigidbody2D component instead of transform.
+- It was difficult to attach the sound effects to the intended events. Resolving this required refactoring the way I handled win and game over conditions before resetting the game.
+
+### Lessons Learned
+- Understanding the importance of consistent object scaling in Unity is crucial to avoid unexpected behavior.
+- Using Rigidbody2D for platform movement ensures smoother interactions with other physics objects.
+- Mechanics should be designed with sound effects in mind from the beginning to avoid refactoring later on.
+
