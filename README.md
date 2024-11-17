@@ -34,6 +34,6 @@
     - Added a flag post object that the ball can reach to complete the level.
     - Added a success screen that flashes up when the ball reaches the flag post and prompts the player to restart the game.
     - Implemented the GameManager script to allow the player to complete the level upon reaching the flag (the objective) and restart the game by pressing the R key.
-    - Also allow the user to reset the level at any time by pressing the ESC key.
+    - The game now resets when the player falls off the level.
 
     

@@ -745,6 +745,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winText: {fileID: 1873678345}
+  player: {fileID: 2750052517920686299}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2279,7 +2280,7 @@ GameObject:
   - component: {fileID: 1873678346}
   - component: {fileID: 1873678345}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Win Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
