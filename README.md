@@ -41,3 +41,6 @@ The goal of the game is to navigate the red ball through the level to reach the 
 #### Aesthetic Goals
 - **Simplicity**: The game should have a simple and clean design. The red ball has a black line to help indicate the direction of movement. The ground will have a simple grass sprite in places to add aesthetic appeal.
 - **Success Indicators**: Players progress the ball towards the clearly marked flag post. When they reach the objective a sucess screen flashes up indicating they completed the level and prompting them to play again.
+#### Core Loop
+- **Core Mechanics**: The player navigates the level, avoiding falling and obstacles, searching for the flag post to reach the end of the level.
+- **Aesthetic Goals**: With the camera following the player, the player can focus on the core mechanics of moving the ball through the level without seeing the entire level at once, providing an aspect of discovery as they progress through the level.
