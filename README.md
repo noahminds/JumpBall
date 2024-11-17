@@ -22,6 +22,10 @@
     - Created the red ball prefab using the Unity editor.
     - Created ground prefabs of three different sizes so I can build the level using the Unity editor. Included a grass sprite to add aesthetic appeal.
     - Implemented collisions between the ball and the ground using an EdgeCollider2D component.
-- **Afternoon**:
-    - Implemented the camera follow script to follow the ball.
+    - Implemented the camera follow script to follow the ball. This adds to the aesthetics of the game by keeping the ball in the center of the screen and allowing the player to navigate a larger level.
     - Implemented the ball movement script including jumping and rolling left and right.
+- **Afternoon**:
+    - Added a vertically moving platform object.
+        - Experienced difficulties with interactions between the ball and the moving platform. When the moving platform moved downwards, the ball would lag behind. This issue was resolved by changing the way that the platform's position was updated - using it's rigidbody2D component instead of transform.
+
+    

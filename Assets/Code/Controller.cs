@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Controls : MonoBehaviour
+public class Controller : MonoBehaviour
 {
-    public float rollSpeed = 5.0f; // Speed at which the ball rolls
-    public float jumpHeight = 15.0f; // Force applied for jumping
-    public Rigidbody2D rb; // Rigidbody2D component of the ball
-
-    private float rollX; // Horizontal input value for rolling
+    public float rollSpeed = 6.0f; // Speed at which the ball rolls
+    public float jumpHeight = 8.0f; // Force applied for jumping
+    public Rigidbody2D rb;
+    private float rollX;
     private bool jump = false; // Flag for jump input
     private bool isGrounded = false; // Checks if the ball is grounded
 
@@ -22,7 +21,7 @@ public class Controls : MonoBehaviour
         // Capture horizontal input
         rollX = Input.GetAxis("Horizontal") * rollSpeed;
 
-        // Detect jump input (only on the frame the space key is pressed)
+        // Detect jump input
         if (Input.GetKeyDown(KeyCode.Space))
         {
             jump = true; // Set jump flag
@@ -34,7 +33,7 @@ public class Controls : MonoBehaviour
     {
         if (collision.collider.CompareTag("Ground"))
         {
-            isGrounded = true; // Player is grounded
+            isGrounded = true;
         }
     }
 
@@ -42,7 +41,7 @@ public class Controls : MonoBehaviour
     {
         if (collision.collider.CompareTag("Ground"))
         {
-            isGrounded = false; // Player is no longer grounded
+            isGrounded = false;
         }
     }
 
