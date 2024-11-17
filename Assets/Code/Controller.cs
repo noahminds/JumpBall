@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Controller : MonoBehaviour
@@ -65,9 +66,14 @@ public class Controller : MonoBehaviour
         jump = false;
     }
 
+    // Check for collisions with spikes and the objective
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Objective"))
+        if (collision.CompareTag("Spikes"))
+        {
+            gameManager.ResetGame(); // Restart the level if the player hits the spikes
+        }
+        else if (collision.CompareTag("Objective"))
         {
             gameManager.WinGame(); // Call the WinGame method when the player reaches the flag
         }
