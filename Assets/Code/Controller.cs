@@ -7,7 +7,7 @@ public class Controller : MonoBehaviour
 {
     public float rollSpeed = 6.0f; // Speed at which the ball rolls
     public float jumpHeight = 8.0f; // Force applied for jumping
-    public Rigidbody2D rb;
+    private Rigidbody2D rb; // Reference to the Rigidbody2D component
     private float rollX;
     private bool jump = false; // Flag for jump input
     private bool isGrounded = false; // Checks if the ball is grounded
@@ -79,7 +79,7 @@ public class Controller : MonoBehaviour
     {
         if (collision.CompareTag("Spikes"))
         {
-            gameManager.ResetGame(); // Restart the level if the player hits the spikes
+            gameManager.ResetOnFail(); // Restart the level after a delay
         }
         else if (collision.CompareTag("Objective"))
         {

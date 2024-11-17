@@ -39,3 +39,4 @@
     - Implemented the GameManager script to allow the player to complete the level upon reaching the flag (the objective) and restart the game by pressing the R key.
     - The game now resets when the player falls off the level.
     - Added a moveable crate object that the ball can push around to help overcome certain obstacles.
+    - Added sound effects to indicate failure (colliding with spikes) and success (reaching the flag post).

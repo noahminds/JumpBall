@@ -9,3 +9,7 @@ Spike Sprite:
 Crate Sprite:
     - https://www.flaticon.com/free-icons/crate
     - Crate icons created by srip - Flaticon
+Victory Sound Effect:
+    - Sound Effect by freesound_community from Pixabay
+Fail Sound Effect:
+    - Sound Effect by u_8g40a9z0la from Pixabay
