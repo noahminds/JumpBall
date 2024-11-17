@@ -1,6 +1,6 @@
 ## How to Play
-### Goal
-The goal of the game is to navigate the red ball through the level to reach the flag post.
+### Goals & Objectives
+The objective of the game is to navigate the red ball through the level to reach the flag post, avoiding obstacles such as spikes and falling off the level.
 
 ### Controls
 - **Move Left**: Press the left arrow key.
