@@ -4,3 +4,5 @@ Flag Sprite:
 Grass Sprite:
     - https://www.flaticon.com/free-icons/grass
     - Grass icons created by Freepik - Flaticon
+Spike Sprite:
+    - https://kairosolo.itch.io/

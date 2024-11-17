@@ -47,8 +47,8 @@ public class Controller : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Move the ball horizontally
-        rb.velocity = new Vector2(rollX, rb.velocity.y);
+        // Update the position of the ball's rigidbody
+        rb.position += new Vector2(rollX * Time.fixedDeltaTime, 0);
 
         // Rotate the ball to simulate rolling
         transform.Rotate(0, 0, -rollX * 1.5f);

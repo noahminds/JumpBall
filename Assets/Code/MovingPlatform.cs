@@ -35,7 +35,7 @@ public class MovingPlatform : MonoBehaviour
         // If the player collides with the platform, make the player a child of the platform's parent (used to preserve scale)
         if (collision.collider.CompareTag("Player"))
         {
-            collision.transform.SetParent(transform.parent);
+            collision.transform.SetParent(transform);
         }
     }
 
