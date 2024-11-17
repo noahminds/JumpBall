@@ -5,6 +5,7 @@
 2. Open the Unity Hub and click on the "Open" button.
 3. Navigate to the directory where the JumpBall project is located and select the project folder.
 4. Once the project and scene are loaded in the Unity Editor, click on the "Play" button at the top of the screen to run the game.
+5. If the level does not automatically load, double-click on the "Scene" asset in the Project window.
 
 ## How to Play
 ### Goals & Objectives
@@ -31,7 +32,7 @@ The objective of the game is to navigate the red ball through the level to reach
 
 ### Tips
 - Set the screen size to Full HD (1920x1080) for the best viewing experience.
-- Set the scale of the Game in the Unity Editor to the minimum for the best viewing experience.
+- Set the scale of the Game in the Unity Editor to the minimum on the slider for the best viewing experience.
 
 ## Preliminary Game Design
 - **Inspiration**: This game was inspired by a childhood game called Red Ball. The game was a simple 2D platformer where the player controlled a red ball that could navigate obstacles across 10 levels to reach the goal.

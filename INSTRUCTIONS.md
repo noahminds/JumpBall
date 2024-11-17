@@ -23,4 +23,4 @@ The objective of the game is to navigate the red ball through the level to reach
 
 ### Tips
 - Set the screen size to Full HD (1920x1080) for the best viewing experience.
-- Set the scale of the Game in the Unity Editor to the minimum for the best viewing experience.
+- Set the scale of the Game in the Unity Editor to the minimum on the slider for the best viewing experience.
