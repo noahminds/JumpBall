@@ -1,4 +1,26 @@
 # JumpBall
+
+## How to Play
+### Goal
+The goal of the game is to navigate the red ball through the level to reach the flag post.
+
+### Controls
+- **Move Left**: Press the left arrow key.
+- **Move Right**: Press the right arrow key.
+- **Jump**: Press the space bar.
+
+### Progress Indicators
+- The camera follows the ball, keeping it centered on the screen, allowing you to see your progress through the level.
+- Navigating moving platforms and obstacles such as spikes will indicate that you are progressing through the level. Players need to navigate these obstacles to reach the flag post at the end.
+- Reaching the flag post at the end of the level is the final objective.
+
+### Achieving the Goal
+- When you reach the flag post, a success screen will flash up, indicating that you have completed the level and prompting you to play again by pressing the 'R' key.
+
+### Avoiding Stuck States
+- The game will reset if you fall off the level or collide with any spikes, ensuring you do not get stuck.
+- Once the objective is reached, the player can restart the level by pressing the 'R' key.
+
 ## Preliminary Game Design
 - **Inspiration**: This game was inspired by a childhood game called Red Ball. The game was a simple 2D platformer where the player controlled a red ball that could navigate obstacles across 10 levels to reach the goal.
 - **Game Concept**: A 2D platformer where the player controls a red ball that can jump to reach the goal.
@@ -17,7 +39,7 @@
 - **Success Indicators**: Players progress the ball towards the clearly marked flag post. When they reach the objective a sucess screen flashes up indicating they completed the level and prompting them to play again.
 
 ## DevLog
-#### Entry 1 - Nov 16, 2024
+#### Nov 16, 2024
 - **Morning**:
     - Created the red ball prefab using the Unity editor.
     - Created ground prefabs of three different sizes so I can build the level using the Unity editor. Included a grass sprite to add aesthetic appeal.
@@ -36,5 +58,3 @@
     - Implemented the GameManager script to allow the player to complete the level upon reaching the flag (the objective) and restart the game by pressing the R key.
     - The game now resets when the player falls off the level.
     - Added a moveable crate object that the ball can push around to help overcome certain obstacles.
-
-    
